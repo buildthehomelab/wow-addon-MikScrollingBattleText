@@ -12,12 +12,20 @@ The alert used to work the total out as soon as the loot message arrived, but th
 
 The alert now waits for the bag count to change, which is normally a fraction of a second, for at most one second. The total never shows less than the amount just looted. It reads your bags only, so items in a bank or reagent bank aren't counted.
 
+## Patch Notes: Mik's Scrolling Battle Text
+Category: Addons
+
+- **Mik's Scrolling Battle Text** is now available in the launcher's Addons list. It scrolls combat, loot and cooldown messages around your character. Type /msbt to change them.
+- Fixed an issue where the bag total shown on loot alerts could be wrong.
+
 ## Install
 
 Copy both folders into `Interface/AddOns`, replacing any older MSBT:
 
 - `MikScrollingBattleText`
 - `MSBTOptions`
+
+If you change the version, change it in both `.toc` files. A launcher that installs both folders compares them and refuses a mismatch.
 
 ## Test
 
